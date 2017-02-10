@@ -1,0 +1,15 @@
+{
+  "name": "rxmini",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preinstall": "yarn global add typescript webpack webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krivanekludek@gmail.com,",
+  "dependencies": {
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.6"
+  }
+}

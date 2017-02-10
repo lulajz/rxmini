@@ -1,0 +1,6 @@
+.idea
+node_modules
+app/*.js
+app/*.map
+yarn.lock
+npm-debug.log
