@@ -1,4 +1,6 @@
 var path = require("path");
+const webpack = require('webpack');
+
 module.exports = {
     entry: {
         app: ["./app/main.ts"]
@@ -15,5 +17,15 @@ module.exports = {
         loaders: [
             { test: /\.ts$/, loader: 'ts-loader' }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            }
+        })
+    ]
 };
