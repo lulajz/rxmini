@@ -1,6 +1,6 @@
 import {Logger} from "./log";
 import {miniObserverFactory} from "./miniobserver.factory";
-import {miniObservableIntervalFactory} from "./miniobserver.interval.factory";
+import {miniObservableIntervalFactory} from "./miniobservable.interval.factory";
 import {MiniObservable} from "./miniobservable";
 
 const logA = new Logger("logA");

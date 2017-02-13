@@ -31,7 +31,7 @@ export class MiniObservable {
                 name() { return `Observer(${name}&${observer.name()})` },
                 next(val) {
                     logger.log(`Called ${name}: ${observer.name()}.next()`);
-                    observer.next( function (val) { return projectionFunction(val); }(val) )
+                    observer.next( ((val) => projectionFunction(val))(val) )
                 },
                 error(e) { observer.error(e) } ,
                 complete() { observer.complete() }

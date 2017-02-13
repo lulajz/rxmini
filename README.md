@@ -7,11 +7,8 @@
 - start index.html
 
 ## @dev
-
 - npm run preinstall
-- start http://localhost:8080/
 - webpack-dev-server --progress --colors
-- start index.html
 
 ## @build
 - webpack
